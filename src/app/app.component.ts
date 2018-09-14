@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'doblePlus';
+
+  // tslint:disable-next-line:use-life-cycle-interface
+  ngOnInit() {
+    function scrollToDownload() {
+
+      if ($('.section-download').length !== 0) {
+        $('html, body').animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+  }
 }

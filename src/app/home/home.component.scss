@@ -1,0 +1,163 @@
+//animacion de texto 
+
+.walpapaer{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+}
+
+path {
+    stroke: rgb(255, 255, 255);
+    fill: rgb(255, 255, 255);
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+}
+
+@keyframes animate {
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    30%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800;
+    }
+
+    90%{
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    100%{
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+
+//contenedor de texto e imagenes
+
+
+.container-home{
+    
+    .fondo{
+        background: url(../../assets/img/fondo.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        height: 670px;
+    }
+
+    .vision{
+        padding-top: 80px;
+        background: #E5E5E5;
+        height: 670px;
+
+        img{
+            margin-left: 20%;
+            margin-top: 20%;
+        }
+        
+        .texto{
+            margin-top: 50px;
+            padding: 60px;
+            padding-left: 150px;
+
+
+            p{
+                font-size: 15px;
+            }
+
+            h1{
+                font-size: 45px;
+                font-weight: 300;
+                margin-bottom: 20px;
+
+                strong{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    
+    .mision{
+        padding-top: 80px;
+        background: rgb(175, 175, 175);
+        height: 670px;
+
+        img{
+            margin-left: 40%;
+            margin-top: 10%;
+        }
+        
+        .texto{
+            margin-top: 50px;
+            padding: 60px;
+            padding-right: 150px;
+
+
+            p{
+                font-size: 15px;
+            }
+
+            h1{
+                font-size: 45px;
+                font-weight: 300;
+                margin-bottom: 20px;
+
+                strong{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+
+    .contacto{
+        background:#E5E5E5;
+
+        h1{
+            text-align: center;
+        }
+    }
+
+
+
+    @media screen and (max-width: 800px) {
+        .vision{
+            height: 100%;
+
+            .texto{
+                    padding: 40px;
+
+                    h1{
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                    }
+            }
+
+        }
+
+        .mision{
+            height: 100%;
+
+            .texto{
+                    padding: 40px;
+
+                    h1{
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                    }
+            }
+
+        }
+    }
+
+}
+
