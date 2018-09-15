@@ -4,3 +4,14 @@ h2 ,h4 ,label{
     font-family: 'Encode Sans', sans-serif !important;
     font-family: 'Poppins', sans-serif !important;
 }
+
+ @media screen and (max-width: 800px) {
+
+    h2{
+        font-size: 25px !important;
+    }
+
+    h4{
+        font-size: 15px !important;
+    }
+}

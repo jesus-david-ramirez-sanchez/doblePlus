@@ -2,7 +2,7 @@
 
 .walpapaer{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 45%;
@@ -29,7 +29,7 @@ path {
         stroke-dashoffset: 1800;
     }
 
-    90%{
+    95%{
         fill: rgba(255, 255, 255, 0);
     }
 
@@ -40,6 +40,13 @@ path {
     }
 }
 
+
+@media screen and (max-width: 800px){
+        .walpapaer{
+        top: 42%;
+        width: 100%;
+    }
+}
 
 //contenedor de texto e imagenes
 
@@ -134,12 +141,18 @@ path {
             height: 100%;
 
             .texto{
-                    padding: 40px;
+                    padding: 25px;
 
                     h1{
                         font-weight: 300;
                         margin-bottom: 10px;
                     }
+            }
+
+            img{
+                margin-left: 20%;
+                margin-top: 10px;
+                margin-bottom: 30px;
             }
 
         }
@@ -148,7 +161,7 @@ path {
             height: 100%;
 
             .texto{
-                    padding: 40px;
+                    padding: 25px;
 
                     h1{
                         font-weight: 300;
@@ -156,6 +169,18 @@ path {
                     }
             }
 
+            img{
+                margin-left: 30%;
+                margin-bottom: -60px;
+            }
+
+        }
+
+        .contacto{
+
+            h2{
+                font-size: 5px !important;
+            }
         }
     }
 
