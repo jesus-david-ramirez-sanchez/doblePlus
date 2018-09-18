@@ -2,7 +2,7 @@
 <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100">
   <div class="container">
     <div class="navbar-translate">
-      <img src="../assets/img/logo2.png" height="25px" width="22px" style="margin-bottom: 10px; margin-right: 7px">
+      <img src="../assets/img/logo2.png" height="30px" width="27px" style="margin-bottom: 10px; margin-right: 7px">
       <a class="navbar-brand text-header" sty href="#">
         <strong>Doble-plus</strong></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,18 +14,18 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        <li class="nav-item" (click)="CloseMenu()">
           <a routerLink="home" class="nav-link">
             <i class="fa fa-instagram"></i> Home
           </a>
         </li>
-        <li class="nav-item">
-          <a routerLink="services" class="nav-link">
+        <li class="nav-item" (click)="CloseMenu()">
+          <a routerLink="services" class="nav-link" >
             <i class="fa fa-facebook-official"></i> Services
           </a>
         </li>
-        <li class="nav-item">
-          <a routerLink="blog" class="nav-link">
+        <li class="nav-item" (click)="CloseMenu()">
+          <a routerLink="blog" class="nav-link" >
             <i class="fa fa-github"></i> Contacto
           </a>
         </li>

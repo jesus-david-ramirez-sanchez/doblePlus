@@ -19,4 +19,8 @@ export class AppComponent {
       }
     }
   }
+
+  public CloseMenu(){
+    $(".navbar-toggler").trigger("click");
+  }
 }
