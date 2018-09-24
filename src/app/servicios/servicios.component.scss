@@ -4,6 +4,22 @@
     height: 663px;
 }
 
+.negocios{
+    height: 600px;
+
+    .work{
+        background: rgb(47, 18, 212);
+    }
+
+    .contenido1{
+        height: 50%;
+    }
+
+    .contenido2{
+        height: 50%;
+    }
+}
+
 @media screen and (max-width: 600px){
     .header{
         width: 100%;
