@@ -10,6 +10,8 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { FormularioComponent } from './home/formulario/formulario.component';
 import { HeaderComponent } from './home/header/header.component';
 import { HeaderServiceComponent } from './servicios/header-service/header-service.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { HeaderServiceComponent } from './servicios/header-service/header-servic
   ],
   imports: [
     BrowserModule,
-    routes
+    routes,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
