@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { NgModule, Component, OnInit } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -20,7 +20,7 @@ export class AppComponent {
     }
   }
 
-  public CloseMenu(){
-    $(".navbar-toggler").trigger("click");
+  public CloseMenu() {
+    $('.navbar-toggler').trigger('click');
   }
 }
